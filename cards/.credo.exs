@@ -30,9 +30,8 @@
           "apps/*/src/",
           "apps/*/test/",
           "apps/*/web/",
-          "mix.exs"
         ],
-        excluded: [~r"/_build/", ~r"/deps/", ~r"/node_modules/"]
+        excluded: [~r"/_build/", ~r"/deps/", ~r"/node_modules/", "mix.exs"]
       },
       #
       # Load and configure plugins here:
@@ -71,7 +70,7 @@
         #
         {Credo.Check.Consistency.ExceptionNames, []},
         {Credo.Check.Consistency.LineEndings, []},
-        {Credo.Check.Consistency.ParameterPatternMatching, []},
+        {Credo.Check.Consistency.ParameterPatternMatching, true},
         {Credo.Check.Consistency.SpaceAroundOperators, []},
         {Credo.Check.Consistency.SpaceInParentheses, []},
         {Credo.Check.Consistency.TabsOrSpaces, []},
