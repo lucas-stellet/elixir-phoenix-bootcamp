@@ -29,7 +29,7 @@
           "apps/*/lib/",
           "apps/*/src/",
           "apps/*/test/",
-          "apps/*/web/",
+          "apps/*/web/"
         ],
         excluded: [~r"/_build/", ~r"/deps/", ~r"/node_modules/", "mix.exs"]
       },
@@ -70,7 +70,7 @@
         #
         {Credo.Check.Consistency.ExceptionNames, []},
         {Credo.Check.Consistency.LineEndings, []},
-        {Credo.Check.Consistency.ParameterPatternMatching, true},
+        {Credo.Check.Consistency.ParameterPatternMatching, []},
         {Credo.Check.Consistency.SpaceAroundOperators, []},
         {Credo.Check.Consistency.SpaceInParentheses, []},
         {Credo.Check.Consistency.TabsOrSpaces, []},
