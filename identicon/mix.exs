@@ -21,6 +21,7 @@ defmodule Identicon.MixProject do
   # Run "mix help deps" to learn about dependencies.
   defp deps do
     [
+      {:egd, github: "erlang/egd"},
       {:credo, "~> 1.5", only: [:dev, :test], runtime: false},
       {:ex_doc, "~> 0.24", only: :dev, runtime: false},
       {:dialyxir, "~> 0.4", only: [:dev]}
